@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.wenrix.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 28 08:14:41 2026 GMT
+  hsts: false
+- host: docs.wenrix.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 23 16:33:46 2026 GMT
+  hsts: null
+domains:
+- domain: wenrix.com
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none

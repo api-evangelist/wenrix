@@ -1,0 +1,26 @@
+generated: '2026-07-21'
+method: probed
+source: live probes of /.well-known/* on Wenrix hosts
+notes: >-
+  No .well-known discovery documents are published on the public marketing host.
+  The developer/docs host (docs.wenrix.com) sits behind an authenticated login
+  portal (302 -> AWS API Gateway /prod/login), so its .well-known surface returns
+  400 to unauthenticated probes. Absence is recorded, not fabricated.
+hosts:
+- host: https://www.wenrix.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://docs.wenrix.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 400
+    note: host gated behind login portal

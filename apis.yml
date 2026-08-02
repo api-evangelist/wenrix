@@ -1,22 +1,126 @@
 aid: wenrix
 name: Wenrix
-description: Wenrix is a company surfaced as a portfolio company of insight-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Wenrix is an AI infrastructure company for the travel industry, providing
+  embedded AI that helps Online Travel Agencies (OTAs) and Travel Management
+  Companies (TMCs) drive revenue and operational efficiency from search through
+  post-trip servicing. Founded in 2017 and backed by Insight Partners, Wenrix
+  processes roughly $12 billion in annual air volume across 60+ global OTAs and
+  TMCs. Its platform is delivered as three API-first products: FareSight, a
+  predictive price-assurance engine that optimizes pricing across EDIFACT, NDC,
+  GDS, aggregators, and low-cost carriers at both search and post-booking
+  stages; FlexEngine, a flight-flexibility solution offering short- and
+  long-term flexibility, refund guarantees, and price-lock through a single API;
+  and DeepFlow, a post-booking servicing automation layer that automates
+  cancellations, refunds, and changes at 93%+ automation rates and is available
+  as either an API or an MCP (Model Context Protocol) Server. Wenrix operates
+  from offices in Tel Aviv, New York, and Barcelona.
 url: https://raw.githubusercontent.com/api-evangelist/wenrix/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.wenrix.com/wp-content/themes/wenrixTheme/assets/img/logo.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - insight-partners
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: portfolio-lead-enriched
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- Travel
+- Airlines
+- Booking
+- Artificial Intelligence
+- Automation
+- Pricing
+- MCP
+- Model Context Protocol
+apis:
+- name: Wenrix FareSight API
+  description: >-
+    Predictive price-assurance API that optimizes fares across EDIFACT, NDC,
+    GDS, aggregators, and low-cost carriers, applying margin protection at both
+    the search and post-booking stages.
+  humanURL: https://www.wenrix.com/wenrix-faresight/
+  baseURL: https://docs.wenrix.com/
+  tags:
+  - Pricing
+  - Airlines
+  - Fares
+  properties:
+  - type: Documentation
+    url: https://docs.wenrix.com/
+- name: Wenrix FlexEngine API
+  description: >-
+    Flight-flexibility API delivering short- and long-term flexibility options,
+    refund guarantees, and price-lock capabilities through a single unified
+    integration.
+  humanURL: https://www.wenrix.com/wenrix-flexengine/
+  baseURL: https://docs.wenrix.com/
+  tags:
+  - Flexibility
+  - Refunds
+  - Airlines
+  properties:
+  - type: Documentation
+    url: https://docs.wenrix.com/
+- name: Wenrix DeepFlow API
+  description: >-
+    Post-booking servicing automation API that automates cancellations,
+    refunds, and changes at 93%+ automation across all content sources, with a
+    conversational servicing layer available as either a REST API or an MCP
+    (Model Context Protocol) Server.
+  humanURL: https://www.wenrix.com/wenrix-deepflow/
+  baseURL: https://docs.wenrix.com/
+  tags:
+  - Servicing
+  - Automation
+  - MCP
+  properties:
+  - type: Documentation
+    url: https://docs.wenrix.com/
+  - type: MCPServer
+    url: mcp/wenrix-mcp.yml
+common:
+- type: DomainSecurity
+  url: security/wenrix-domain-security.yml
+- type: Website
+  url: https://www.wenrix.com/
+- type: DeveloperPortal
+  url: https://docs.wenrix.com/
+- type: Documentation
+  url: https://docs.wenrix.com/
+- type: Blog
+  url: https://www.wenrix.com/blog/
+- type: About
+  url: https://www.wenrix.com/about-us/
+- type: TermsOfService
+  url: https://www.wenrix.com/tcs/
+- type: PrivacyPolicy
+  url: https://www.wenrix.com/privacy-policy/
+- type: SignUp
+  url: https://docs.wenrix.com/
+- type: MCPServer
+  url: mcp/wenrix-mcp.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
