@@ -2,15 +2,12 @@ generated: '2026-07-21'
 method: searched
 status: published
 source: https://www.wenrix.com/wenrix-deepflow/
-notes: >-
-  Wenrix publicly documents that its DeepFlow post-booking servicing product is
-  "available as a modular API or MCP (Model Context Protocol) Server." The MCP
-  server exposes Wenrix's conversational servicing layer (cancellations, refunds,
-  changes) to AI agents. The endpoint, transport, and tool manifest are published
-  only inside the authenticated developer portal (docs.wenrix.com), so no public
-  tool list could be captured verbatim; the server's existence and product scope
-  are provider-stated. Not fabricated: tools are intentionally left unenumerated
-  rather than invented.
+notes: 'Wenrix publicly documents that its DeepFlow post-booking servicing product is "available as a
+  modular API or MCP (Model Context Protocol) Server." The MCP server exposes Wenrix''s conversational
+  servicing layer (cancellations, refunds, changes) to AI agents. The endpoint, transport, and tool manifest
+  are published only inside the authenticated developer portal (docs.wenrix.com), so no public tool list
+  could be captured verbatim; the server''s existence and product scope are provider-stated. Not fabricated:
+  tools are intentionally left unenumerated rather than invented.'
 server:
   name: wenrix-deepflow
   product: Wenrix DeepFlow
@@ -25,3 +22,8 @@ capabilities:
   - changes / exchanges automation
   - conversational post-booking servicing
 tools: []
+deployment:
+  mode: unclear
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
