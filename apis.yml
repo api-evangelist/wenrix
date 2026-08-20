@@ -46,6 +46,15 @@ tags:
 - Automation
 - Pricing
 - MCP
+tags_raw:
+- Company
+- Travel
+- Airlines
+- Booking
+- Artificial Intelligence
+- Automation
+- Pricing
+- MCP
 - Model Context Protocol
 apis:
 - name: Wenrix FareSight API
